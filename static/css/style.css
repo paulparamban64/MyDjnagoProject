@@ -1,0 +1,548 @@
+/* ================================
+   RESET
+================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+.navbar {
+  background-color: #1e293b;
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+.username {
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+
+/* ================================
+   HOME & ABOUT
+================================ */
+
+.container>h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #1e293b;
+}
+
+.container>p {
+  color: #64748b;
+}
+
+
+/* ================================
+   LOGIN / REGISTER
+================================ */
+
+.auth-container {
+  min-height: 70vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 450px;
+
+  background-color: white;
+  padding: 35px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.auth-card h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #1e293b;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+
+/* ================================
+   FORM
+================================ */
+
+.form-group p {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 7px;
+  color: #334155;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 11px 12px;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+
+  font-size: 15px;
+  outline: none;
+
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* ================================
+   SUBMIT BUTTON
+================================ */
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+
+  background-color: #2563eb;
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #1d4ed8;
+}
+
+
+/* ================================
+   BOTTOM LOGIN / REGISTER TEXT
+================================ */
+
+.bottom-text {
+  text-align: center;
+  margin-top: 20px;
+  color: #64748b;
+}
+
+.bottom-text a {
+  color: #2563eb;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.bottom-text a:hover {
+  text-decoration: underline;
+}
+
+
+/* ================================
+   POST FORM
+================================ */
+
+.post-form {
+  background-color: white;
+
+  padding: 30px;
+
+  margin-top: 25px;
+  margin-bottom: 35px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.post-form p {
+  margin-bottom: 18px;
+}
+
+.post-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.post-form input,
+.post-form textarea,
+.post-form select {
+  width: 100%;
+  padding: 12px;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+
+  font-size: 15px;
+
+  outline: none;
+}
+
+.post-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.post-form input:focus,
+.post-form textarea:focus,
+.post-form select:focus {
+  border-color: #2563eb;
+}
+
+
+/* Post Submit Button */
+
+.post-form button {
+  padding: 11px 25px;
+
+  background-color: #2563eb;
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.post-form button:hover {
+  background-color: #1d4ed8;
+}
+
+
+/* ================================
+   POST LIST
+================================ */
+
+.container ul {
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 25px;
+}
+
+.container ul li {
+  background-color: white;
+
+  padding: 25px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+}
+
+.container ul li:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.container ul li a {
+  text-decoration: none;
+}
+
+.container ul li h1 {
+  font-size: 22px;
+  color: #2563eb;
+
+  margin-bottom: 10px;
+}
+
+.container ul li h1:hover {
+  color: #1d4ed8;
+}
+
+.container ul li p {
+  color: #64748b;
+  font-size: 15px;
+}
+
+
+/* ================================
+   SINGLE POST PAGE
+================================ */
+
+.container>h3 {
+  font-size: 18px;
+
+  color: #475569;
+
+  margin: 15px 0;
+
+  font-weight: normal;
+}
+
+.container>h3+p {
+  background-color: white;
+
+  padding: 25px;
+
+  margin-top: 20px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+
+  font-size: 17px;
+
+  line-height: 1.8;
+}
+
+
+/* Author */
+
+.container>p:first-child {
+  color: #2563eb;
+
+  font-weight: bold;
+
+  margin-bottom: 10px;
+}
+
+
+/* ================================
+   ERROR MESSAGES
+================================ */
+
+.errorlist {
+  list-style: none;
+  color: #dc2626;
+
+  font-size: 13px;
+
+  margin-bottom: 8px;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 768px) {
+
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .container {
+    width: 94%;
+  }
+
+  .container ul {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-card {
+    padding: 25px;
+  }
+
+  .container>h1 {
+    font-size: 28px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    gap: 8px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .auth-card {
+    padding: 20px;
+  }
+}
+
+
+
+/* Remove default list styling */
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+/* Individual post container */
+.post-item {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Buttons in the top-right corner */
+.post-actions {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Remove default form spacing */
+.post-actions form {
+  margin: 0;
+}
+
+/* Common button styling */
+.edit-btn,
+.delete-btn {
+  display: inline-block;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Edit button */
+.edit-btn {
+  background-color: #2563eb;
+}
+
+.edit-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Delete button */
+.delete-btn {
+  background-color: #dc2626;
+}
+
+.delete-btn:hover {
+  background-color: #b91c1c;
+}
+
+/* Post title */
+.post-title {
+  display: block;
+  color: #222;
+  text-decoration: none;
+  margin-right: 160px;
+}
+
+.post-title h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.post-title:hover {
+  color: #2563eb;
+}
+
+/* Post description */
+.post-item p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 0;
+}

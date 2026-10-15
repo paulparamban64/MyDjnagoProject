@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %} Login User {% endblock %}
+
+
+{% block content %}
+
+
+<div class="auth-container">
+
+<div class="auth-card">
+<h2>Login</h2>
+<p class="subtitle">Login to your account</p>
+
+
+<form method="POST">
+  {% csrf_token %}
+  <div class="form-group"></div>
+  {{ form.as_p}}
+  </div>
+  <button type=""submit class="submit-btn">Login</button>
+</form>
+
+<p class="bottom-text">
+  Dont have an account?
+  <a href="/user/register">Register</a>
+</p>
+</div>
+{% endblock %}

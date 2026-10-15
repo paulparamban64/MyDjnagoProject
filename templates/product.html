@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+product page
+{% endblock %}
+
+{% block content %}
+<h1>My Product page</h1>
+<p>This is list of all products</p>
+#<form method="PRODUCT">
+ #   {% csrf_token %}
+ #   {{form.as_p}}
+ #   <button>Submit</button>
+#</form>
+#<ul>
+ #   {% for i in data %}
+ #   <li>
+ #       <h1>{{i.product_name}}</h1>
+ #       <h2>{{i.description}}</h2>
+ #   </li>
+#    {% endfor %}
+#</ul>
+{% endblock %}

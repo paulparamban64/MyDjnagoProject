@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Post Page
+{% endblock %}
+
+{% block content %}
+<p>{{post.author}}</p>
+<h1>{{post.post_title}}</h1>
+<h3>{{post.description}}</h3>
+<p>{{post.content}}</p>
+{% endblock %}

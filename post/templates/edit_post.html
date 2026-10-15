@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Edit Post Page
+{% endblock %}
+
+{% block content %}
+<h1>This is My Post Page</h1>
+<p>This is the list of all the post</p>
+<div class="post-form">
+
+  <form method="POST" action="/post/edit/{{post.post_id}}/">
+    {% csrf_token %}
+
+    <label>Title:</label>
+    <input type="text" name="post_title" value="{{post.post_title}}/" required>
+
+    <br><br>
+
+    <label>Desription:</label>
+    <textarea name="description" required>{{ post.description }}</textarea>
+
+    <br><br>
+    <label>Content:</label>
+    <textarea name="content" required>{{ post.content }}</textarea>
+    
+    <br><br>
+    {% if error %}
+    <p>{{ error }}</p>
+    {% endif %}
+    <br><br>
+    <button type="submit">Update Post</button>
+  </form>
+   
+</div>
+
+{% endblock %}
